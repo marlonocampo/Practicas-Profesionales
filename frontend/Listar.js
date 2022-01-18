@@ -16,8 +16,8 @@ const listar = (datos) => {
             <td>${dato.fecha}</td>
             <td>${dato.sexo}</td>
             <td>
-            
-            <a class="btn btn-primary" href="/backend/EditarVista.php?id=${dato.id}" role="button"> Editar </a> 
+           
+            <button class="btn btn-primary"  id="btneleditar" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" type="button" onclick="editar(${dato.id})">Editar</button> 
             <button class="btn btn-danger" id="btneliminar" onclick="eliminar(${dato.id})">Eliminar</button> 
             </td>
         </tr>
@@ -25,6 +25,7 @@ const listar = (datos) => {
         tbody.innerHTML = filas;
     })
 //onclick="editar(${dato.id})"
+    //<a class="btn btn-primary" href="/backend/EditarVista.php?id=${dato.id}" role="button"> Editar </a>
 }
 
 

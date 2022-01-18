@@ -86,6 +86,56 @@
 
         </div>
     </div>
+
+    <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle" type="button" >abrir</button>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel"> Actualizar dato </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="Actualizar" >
+                        <input id="id" type="hidden" name="id">
+                        <div class="mb-1">
+                            <label class="form-label">Nombre</label>
+                            <input id="nombree" type="text" name="nombree" class="form-control"
+                            >
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Apellido</label>
+                            <input id="apellidoe" type="text" name="apellidoe" class="form-control"
+                            >
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Edad</label>
+                            <input id="edade" type="number" name="edade" class="form-control"
+                            >
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Date</label>
+                            <input id="fechae" type="date" name="fechae" class="form-control"
+                            >
+                        </div>
+                        <div class="mb-1">
+                            <label for="sexo" class="form-label">Date</label>
+                            <select class="form-select" id="sexoe" name="sexoe">
+                                <option     selected value="">Seleccione Sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="Actualizar()" > Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 
 <script src="frontend/Listar.js"></script>
